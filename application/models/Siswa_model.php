@@ -33,4 +33,5 @@ class Siswa_model extends CI_Model {
 									WHERE id='$id' ");
 		return $query;
 	}
+
 }

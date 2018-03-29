@@ -31,5 +31,5 @@ class Welcome extends CI_Controller {
 		$data['siswa'] = $this->Siswa_model->getById($id);
 		$this->load->view('siswa_edit', $data);
 	}
-	
+
 }

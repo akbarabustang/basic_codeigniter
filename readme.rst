@@ -1,5 +1,5 @@
 ###################
-What is CodeIgniter
+Basic CodeIgniter for Beginner
 ###################
 
 CodeIgniter is an Application Development Framework - a toolkit - for people

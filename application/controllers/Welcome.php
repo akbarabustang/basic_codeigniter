@@ -21,4 +21,15 @@ class Welcome extends CI_Controller {
 		$this->load->view('siswa_tambah');		
 
 	}
+
+	public function edit(){
+		if (isset($_POST['submit'])) {
+			$this->Siswa_model->edit_siswa();
+			redirect('welcome/index');
+		}
+		$id = $this->uri->segment(3);
+		$data['siswa'] = $this->Siswa_model->getById($id);
+		$this->load->view('siswa_edit', $data);
+	}
+	
 }

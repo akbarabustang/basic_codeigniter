@@ -19,4 +19,18 @@ class Siswa_model extends CI_Model {
 		return $query;
 	}
 	
+	public function getById($id){
+		return $query = $this->db->query(" SELECT * FROM tbl_siswa WHERE id='$id' ")->row_array();
+	}
+
+	public function edit_siswa(){
+		$id = $this->input->post('id');
+		$nis = $this->input->post('nis');
+		$nm_siswa = $this->input->post('nm_siswa');
+		$alamat = $this->input->post('alamat');
+
+		$query = $this->db->query(" UPDATE tbl_siswa SET nis='$nis', nm_siswa= '$nm_siswa', alamat='$alamat' 
+									WHERE id='$id' ");
+		return $query;
+	}
 }

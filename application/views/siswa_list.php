@@ -17,7 +17,7 @@
         <td><?php echo $siswa['nm_siswa'] ?></td>
         <td><?php echo $siswa['alamat'] ?></td>
         <td>
-            <a href="#">edit</a>
+            <a href="<?php echo site_url('/welcome/edit/'.$siswa['id']) ?>">Edit</a>
             <a href="#">hapus</a>
         </td>
     </tr>

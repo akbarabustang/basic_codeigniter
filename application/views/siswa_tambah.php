@@ -11,7 +11,7 @@
         </tr>
         <tr>
             <td>Masukkan Alamat siswa</td>
-            <td><input type="text" name="alamat" ></td>
+            <td><input type="text" name="alamat"></td>
         </tr>
     </table>
     <button type="submit" name="submit">Simpan</button>

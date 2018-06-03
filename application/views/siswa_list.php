@@ -18,7 +18,7 @@
         <td><?php echo $siswa['alamat'] ?></td>
         <td>
             <a href="<?php echo site_url('/welcome/edit/'.$siswa['id']) ?>">Edit</a>
-            <a href="#">hapus</a>
+            <a href="<?php echo site_url('/welcome/delete/'.$siswa['id']) ?>">Hapus</a>
         </td>
     </tr>
     <?php endforeach ?> 

@@ -32,4 +32,12 @@ class Welcome extends CI_Controller {
 		$this->load->view('siswa_edit', $data);
 	}
 
+	public function delete(){
+		$id = $this->uri->segment(3);
+		$this->Siswa_model->hapus_siswa($id);
+		redirect('welcome','refresh');
+		
+	}
+
+
 }
